@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Kişisel Profilim </title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1e1e2e;
+            color: #cdd6f4;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        }
+            h1 {color: #89b4fa; margin-bottom: 5px;}
+            h2 {color:#f5c2e7; margin-top: 25px; border-bottom: 1px solid#45475a; padding-bottom: 5px;}
+            
+            /* kart yapısı */
+            .card {
+                background-color: #313244;
+                padding: 15px;
+                border-radius: 8px;
+                margin-top: 10px;
+            }
+
+            /* liste stilleri */
+            ul {list-style-type: square; padding-left: 20px;}
+            li {margin-bottom: 5px;}
+
+            /* form elemanları */
+            .input-group {
+                display: flex;
+                gap: 10px;
+                margin-top: 10px;
+            }
+                input[type=email]{
+                    flex: 1;
+                    padding: 10px;
+                    border-radius: 6px;
+                    border: 1px solid #45475a;
+                    background-color: #313244;
+                    color: #ffffff;
+                }
+            button {
+                background-color: #89b4fa;
+                border: none;
+                padding: 10px 15px;
+                border-radius: 5px;
+                cursor: pointer;
+                font-weight: bold;
+                transition: 0.2s;
+            }
+
+            button:hover {
+                background-color: #b4befe;
+            }
+
+            /**link stilleri*/
+            a {
+                color: #89b4fa;
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+    </style>
+
+</head>
+<body>
+
+    <div style="background-color: #313244; padding: 12px; border-radius: 8px; margin-bottom: 20px; 
+    display: flex; gap: 15px;">
+    
+    <a href="index.html" style="color: #89b4fa; text-decoration: none; font-weight: bold;">Ana sayfa</a>
+    <a href="sistem.html" style="color: #89b4fa; text-decoration: none; font-weight: bold;">Sistem</a>
+    <a href="ekipman.html" style="color: #89b4fa; text-decoration: none; font-weight: bold;">Ekipmanlar</a>
+    </div>
+
+    <h1>Sistem bilgilerim</h1>
+    <p>Oyun ve yazılım çalışmalarımda kullandığım bilgisayar sistemim:</p>
+    
+    <ul>
+        <li>İntel Core i5 14450HX</li>
+        <li>NVIDIA GeForce RTX 5060</li>
+        <li>32 GB DDR5</li>
+        <li>1 TB NVMe SSD</li>
+    </ul>
+
+    <h2>Oyun Performansı (RTX 5060 & i5 14450HX)</h2>
+    <Table border="1" style="width: 100%; border-collapse: collapse; text-align: left; 
+    background-color: #313244; color: #cdd6f4;">
+
+        <tr style="background-color: #45475a;">
+            <th style="padding: 10px;">Oyun</th>
+            <th style="padding: 10px;">Çözünürlük</th>
+            <th style="padding: 10px;">Ortalama FPS</th>
+        </tr>
+        <tr>
+            <td style="padding: 10px;">Valorant</td>
+            <td style="padding: 10px;">1080p</td>
+            <td style="padding: 10px;">300+ FPS</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px;">Hunt: Showdown 1896</td>
+            <td style="padding: 10px;">1080p</td>
+            <td style="padding: 10px;">110-140FPS</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px;">Dead ny Daylight</td>
+            <td style="padding: 10px;">1080p</td>
+            <td style="padding: 10px;">110-140FPS</td>
+        </tr>
+    </Table>
+
+    <br>
+    <a href="index.html">Ana sayfaya dön</a>
+</body>
+</html>

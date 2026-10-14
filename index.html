@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Kişisel Profilim </title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1e1e2e;
+            color: #cdd6f4;
+            width: 90%;
+            max-width: 650px;
+            margin: 40px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+            box-sizing: border-box;
+        }
+            h1 {color: #89b4fa; margin-bottom: 5px;}
+            h2 {color:#f5c2e7; margin-top: 25px; border-bottom: 1px solid#45475a; padding-bottom: 5px;}
+            
+            /* kart yapısı */
+            .card {
+                background-color: #313244;
+                padding: 15px;
+                border-radius: 8px;
+                margin-top: 10px;
+            }
+
+            /* liste stilleri */
+            ul {list-style-type: square; padding-left: 20px;}
+            li {margin-bottom: 5px;}
+
+            /* form elemanları */
+            .input-group {
+                display: flex;
+                gap: 10px;
+                margin-top: 10px;
+            }
+                input[type=email]{
+                    flex: 1;
+                    padding: 10px;
+                    border-radius: 6px;
+                    border: 1px solid #45475a;
+                    background-color: #313244;
+                    color: #ffffff;
+                }
+            button {
+                background-color: #89b4fa;
+                border: none;
+                padding: 10px 15px;
+                border-radius: 5px;
+                cursor: pointer;
+                font-weight: bold;
+                transition: 0.2s;
+            }
+
+            button:hover {
+                background-color: #b4befe;
+            }
+
+            /**link stilleri*/
+            a {
+                color: #89b4fa;
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+    </style>
+
+</head>
+<body>
+
+    <div style="background-color: #313244; padding: 12px; border-radius: 8px; margin-bottom: 20px; 
+    display: flex; gap: 15px;">
+    
+    <a href="index.html" style="color: #89b4fa; text-decoration: none; font-weight: bold;">Ana sayfa</a>
+    <a href="sistem.html" style="color: #89b4fa; text-decoration: none; font-weight: bold;">Sistem</a>
+    <a href="ekipman.html" style="color: #89b4fa; text-decoration: none; font-weight: bold;">Ekipmanlar</a>
+    </div>
+
+    <h1> Oyuncu & Donanım köşesi </h1>
+    <p> Favori oyunlarım, 
+        <a href="sistem.html" style="color: #89b4fa;"> sistemim </a>
+        ve kullandığım
+        <a href="ekipman.html" style="color: #89b4fa;"> ekipmanlar </a>
+    </p>
+
+    <h2>Hakkımda & Eğitim</h2>
+        <div class="card">
+            <p style="color: #89b4fa; margin: 0;">
+                
+                    Bilgisayar Programcılığı öğrencisiyim. 
+                    Web geliştirme, yazılım ve tasarım alanlarında 
+                    kendimi geliştiriyorum.
+                
+            </p>
+        </div>
+
+    <h2> Oynadığım & sevdiğim oyunlar </h2>
+    <ul>
+        <li> Hunt: Showdown 1896 </li>
+        <li> Valorant </li>
+        <li> Dead by Daylight </li>
+    </ul>
+
+    <h2>İletişim & Takım isteği</h2>
+    <input type="email" placeholder="E-posta adresiniz">
+    <button> Bana Ulaşın </button>
+
+    <button type="button" onclick="temaDegistir()" style="position: fixed; bottom: 20px; right: 20px; z-index: 9999; 
+    padding: 10px 16px; border-radius: 20px; border: none; background-color: #89b4fa; color: 11111b; font-weight: bold; 
+    cursor: pointer;"> Temayı Değiştir </button>
+
+    <script>
+        function temaDegistir(){
+            let body = document.body;
+            if (body.style.backgroundColor === "white"){
+                body.style.backgroundColor = "#1e1e2e";
+                body.style.color = "#cdd6f4"
+            }
+            else {
+                body.style.backgroundColor = "white";
+                body.style.color = "#11111b"
+            }
+        }
+    </script>
+
+</body>
+</html>
